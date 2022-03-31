@@ -1,0 +1,69 @@
+
+
+
+        Tarkoitus:
+        -Tuo automaatiota työhakemusten tekemiseen, että ei tarvitse aina kaikkea kirjoittaa uudestaan
+        -keskitetty paikka hakemustekstipätkille, niiden arvioinnille ja muokkaamiselle
+        -keskitetty paikka vanhojen työhaku juttujen säilömiseen
+
+
+
+        Ominaisuudet
+
+        :Pakollinen
+        -Tietokanta jonne tallentaa asioita
+            tietokantaan myös tiedosto jossa kaikki perustiedot että ei tarvitse niitä aina kirjoitella
+
+        -systeemi jolla tallentaa tekstipätkiä: perustieto, joku otsikko, tagit, kommentti, päivämäärä(luonti, muokkaus) ehkä joku 1/10 arviointi systeemi
+        -systeemi jolla lukea tallennettuja tekstipätkiä, NIIN että niitä on helppo selata ja muokata
+        -systeemi jolla yhdistellä tekstinpätkiä yhtenäiseksi tekstiksi
+
+
+
+        :Olisi kiva
+        -varasto kokonaisille hakemusteksteille
+        -joku systeemi jolla analysoida ne hakemustekstit ja eritellä ne
+
+
+        :Olisi kiva, mutta ei varmaan pysty nyt
+        -verkko crawleri joka kerää tietoja työpaikka ilmoituksista
+
+
+
+        Ulkoasu:
+        Graafinen käyttöliittymä, ei jaksa nyt konsolilla värkätä tämmöistä
+
+        pitää miettiä tarkemmin millaisen tekee jossain välissä
+            -suunnittele vaikka paintissa joku yleinen kuva
+
+
+        Tietokanta:
+        suunnittele millainen se itse tietokanta on
+        -kannattaa varmaan lukea jostain jotain perusjuttuja
+
+        googlen mukaan hyviä ohjelmia pikku projektiin:
+        Neo4j.
+        MongoDB. -tämä?
+        RethinkDB.
+        Redis.
+        SQLite. - tämä ehkä?
+        Cassandra.
+        Timescale.
+        CouchDB.
+        tinydb?
+        firebird - tämä voi sopia myös, kokeile ehkä tätä ensin
+
+
+
+
+
+
+
+
+
+        Muuta
+
+        -selvitä miten virtualisoida tietokanta palvelin,  ei kannata tämmöiselle tehdä kokonaista sql palvelinta tai jotain
+        jos se voi toimia virtualisoidullakin
+
+        -
