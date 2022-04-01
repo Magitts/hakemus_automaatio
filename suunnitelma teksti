@@ -11,18 +11,21 @@
         Ominaisuudet
 
         :Pakollinen
-        -Tietokanta jonne tallentaa asioita
-            tietokantaan myös tiedosto jossa kaikki perustiedot että ei tarvitse niitä aina kirjoitella
+        -Tietokanta jonne tallentaa asioita -> firebirdillä kaiketi
+
 
         -systeemi jolla tallentaa tekstipätkiä: perustieto, joku otsikko, tagit, kommentti, päivämäärä(luonti, muokkaus) ehkä joku 1/10 arviointi systeemi
         -systeemi jolla lukea tallennettuja tekstipätkiä, NIIN että niitä on helppo selata ja muokata
         -systeemi jolla yhdistellä tekstinpätkiä yhtenäiseksi tekstiksi
+            ->joku kytkin jolla voi vaihtaa [viittaukset] viittauksen nimeksi tai sen sisällöksi
+        -systeemi mihin tallentaa perustietoja ja mihin voi viitata esim  [näin] tekstinpätkissä
+            -miksei kokonaisia tekstinpätkiäkin niin voisi tehdä oikein hienon ja sekavan tekstin joka koostuu pelkistä viittauksista
 
 
 
         :Olisi kiva
         -varasto kokonaisille hakemusteksteille
-        -joku systeemi jolla analysoida ne hakemustekstit ja eritellä ne
+        -joku systeemi jolla analysoida valmista hakemustekstiä ja eritellä ne lauseisiin
 
 
         :Olisi kiva, mutta ei varmaan pysty nyt
@@ -31,10 +34,10 @@
 
 
         Ulkoasu:
-        Graafinen käyttöliittymä, ei jaksa nyt konsolilla värkätä tämmöistä
+        Graafinen käyttöliittymä, käyttää vaikka simplegui kirjastoa vai mikä se oli
 
         pitää miettiä tarkemmin millaisen tekee jossain välissä
-            -suunnittele vaikka paintissa joku yleinen kuva
+            x -suunnittele vaikka paintissa joku yleinen kuva
 
 
         Tietokanta:
@@ -65,5 +68,6 @@
 
         -selvitä miten virtualisoida tietokanta palvelin,  ei kannata tämmöiselle tehdä kokonaista sql palvelinta tai jotain
         jos se voi toimia virtualisoidullakin
+            -tai jos voi laittaa jonkun niin kevyen palvelimen että se pyörisi vaikka muistitikulta / ohjelman mukaan niputettuna
 
         -
