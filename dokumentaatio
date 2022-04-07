@@ -1,0 +1,36 @@
+
+
+mariadb
+10.6.7
+
+-ei toimi verkossaXXXXX
+-> ei voi yhdistää heidisql clientillä jos tämä on päällä
+
+https://www.mariadbtutorial.com/getting-started/install-mariadb/
+https://mariadb.com/kb/en/beginner-mariadb-articles/
+täällä on ohjeita
+
+laitoin myös 8-mikälie kirjainsetin päälle
+remote connection pois päältä kuitenkin
+
+
+nyt kun mariadb on asennettu ja siihen pääsee kiinni heidisql clientillä, pitäisi alkaa opettelemaan
+miten se toimii.
+
+
+
+nyt pitäisi kai opetella itse python ohjelman tekeminen.
+
+-graafinen ui
+    -ikkunat ja niiden välillä siirtyminen
+
+-ominaisuudet
+    -tietokantaan yhdistäminen
+        -tietokantaan tallentaminen
+        -tietokannan luominen? (myöhemmässä vaiheessa, ei tehdä kuin kerran)
+        -tietokannasta hakeminen
+    -tietojen lisääminen ohjelmaan
+
+
+
+
