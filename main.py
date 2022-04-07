@@ -1,16 +1,50 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import PySimpleGUI
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import PySimpleGUI as sg
+import mariadb
+import sys
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+
+
+def jotain():
+    layout = [[sg.Text("Hello from PySimpleGUI")], [sg.Button("OK")]]
+
+    # Create the window
+    window = sg.Window("Demo", layout)
+
+    # Create an event loop
+    while True:
+        event, values = window.read()
+        # End program if user closes window or
+        # presses the OK button
+        if event == "OK" or event == sg.WIN_CLOSED:
+            break
+
+    window.close()
+#jotain()
+
+
+
+def tietokanta():
+    try:
+        conn = mariadb.connect(
+            user="root",
+            password="P4ssw0rd",
+            host="localhost",
+            port=3306,
+            database="testi"
+
+        )
+    except mariadb.Error as e:
+        print(f"Error connecting to MariaDB Platform: {e}")
+        sys.exit(1)
+
+    # Get Cursor
+    cur = conn.cursor()
+tietokanta()
