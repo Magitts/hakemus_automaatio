@@ -7,8 +7,80 @@ import sys
 
 
 
+"""
+
+#<
+
+koita saada tehtyä nyt aluksi edes:
+-tietojen tallentaminen tietokantaan
+    -se tietokanta itsessään
+-tietojen hakeminen tietokannasta listaan
+-tallennettujen tietojen muokkaus
 
 
+kaikissa ikkunoissa:
+-ruksi josta menee kiinni (on kai oletuksena joka tapauksessa)
+-ruksista ikkuna menee yllättäen kiinni.  Laittaa sen vain kiinni ilman että tallentaa mitään muutoksia
+    -> ideana että kaikki muutokset mitä haluaa tehdä tallentuu heti kun ne on tehnyt ja ne voi poistaa
+        samasta ikkunasta jos haluaa
+
+pääikkuna
+napit{
+    lisää uusi
+    muokkaa vanhaa (valitse listasta)
+    avaa generointi ikkuna
+    perustietoikkuna
+    poista vanha (joko kysyy varmistuksen tai voisi laittaa lisänapin lukolle, joka pitää ottaas pois jos haluaa poistaa)
+}
+näytöt{
+    tallennetut tekstinpätkät
+        otsikko | tagit | preview
+}
+
+tekstinmuokkausikkuna
+napit{
+    lisää uusi tagi
+    hyväksy
+    tyhjennä
+}
+kentät{
+    otsikko
+    valitut tagit
+    kommentti
+    Teksti(iso kenttä)
+}
+
+
+tekstingenerointi ikkuna
+näytöt{
+
+    tekstikenttä
+}
+
+perustiedot ikkuna
+-[asia] = {nimi : tieto}
+
+tagilista ikkuna
+napit{
+    tallenna uusi tagi
+    tyhjennä kenttä
+    tallenna tagit
+}
+näytöt{
+    listaa aiemmin tallennetut
+
+        [x] loota sille että voi valita aiemmin tallennetun
+}
+kentät{
+tagin nimi, kentässä myös nappi tallentamiselle tai tyhjennykselle
+
+
+}
+
+
+
+>#
+"""
 
 
 
@@ -47,4 +119,4 @@ def tietokanta():
 
     # Get Cursor
     cur = conn.cursor()
-tietokanta()
+
